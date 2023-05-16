@@ -1,6 +1,6 @@
 package operator;
 
-public class Operatior2 {
+public class Operator2 {
 
 	public static void main(String[] args) {
 		// 비교 연산 >, <, ==, !=
