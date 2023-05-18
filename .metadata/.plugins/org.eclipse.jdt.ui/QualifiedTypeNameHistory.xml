@@ -2,15 +2,24 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="var.StringType"/>
     <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
-    <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.security.KeyStore.TrustedCertificateEntry"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="operator.PrintFormat"/>
     <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMPGPData"/>
     <fullyQualifiedTypeName name="java.awt.desktop.AboutHandler"/>
+    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMSubTreeData"/>
+    <fullyQualifiedTypeName name="javax.naming.ldap.StartTlsRequest"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMSubTreeData"/>
+    <fullyQualifiedTypeName name="java.awt.FocusTraversalPolicy"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.ApacheOctetStreamData"/>
 </qualifiedTypeNameHistroy>
