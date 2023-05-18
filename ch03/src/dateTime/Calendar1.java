@@ -33,7 +33,7 @@ public class Calendar1 {
 		
 		System.out.printf("%d년 %s월 %d일\n",year,strMonts,date);
 		System.out.printf("%s시 %d분 %d초\n",strHour,minute,second);
-//		System.out.printf("%02d시 %02d분 %02d초\n",hour,minute,second);
+		System.out.printf("%02d시 %02d분 %02d초\n",hour,minute,second);
 		
 		// 요일		
 		// 1일 2월 3화 4수 5목 6금 7토
