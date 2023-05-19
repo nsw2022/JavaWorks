@@ -28,6 +28,10 @@ Ctrl + Alt + down(아래방향키) 한줄복사
 파라미터 매개변수 확인
 Ctrl + Shift + space
 
+----------생성자 자동완성--------------------------------
+생성자 역시 마우스우클릭->Source->Generate Constructor using Fields... (필드있는 생성자,필드선택가능)
+
+                                              ->Generate Constructor from Superclass... (기본생성자) 로 자동생성 가능하다.
 
 -----------자바 자동완성 설정------------------
 1. eclipse -> window -> Preferences
