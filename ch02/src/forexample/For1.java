@@ -36,7 +36,8 @@ public class For1 {
 		for (int j = 1; j < 10; j++) {
 			System.out.println(dan + " X " + j + " = " + dan * j);
 		}
-
+		
+		sc.close();
 	}
 
 }

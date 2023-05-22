@@ -19,7 +19,7 @@ public class Ex01 {
 		catch (Exception e) {
 			System.out.println("정수값 입력안함 프로그램 종료");
 		}
-
+		sc.close();
 	}
 
 }

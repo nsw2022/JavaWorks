@@ -1,4 +1,4 @@
-package whileexample;
+package forexample;
 
 import java.util.Scanner;
 

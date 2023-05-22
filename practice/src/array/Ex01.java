@@ -43,7 +43,7 @@ public class Ex01 {
 		System.out.println("최솟값: "+min);
 		System.out.println("총 값: "+total);
 		
-
+		sc.close();
 	}
 
 }

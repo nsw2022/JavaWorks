@@ -29,7 +29,7 @@ public class Ex02 {
 			System.out.print(i*3 + " ");
 		}
 		
-		
+		sc.close();
 
 	}
 
