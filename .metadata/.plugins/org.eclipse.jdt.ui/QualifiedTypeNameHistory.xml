@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="var.StringType"/>
-    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
-    <fullyQualifiedTypeName name="java.security.KeyStore.TrustedCertificateEntry"/>
-    <fullyQualifiedTypeName name="java.lang.Boolean"/>
-    <fullyQualifiedTypeName name="operator.PrintFormat"/>
-    <fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMPGPData"/>
     <fullyQualifiedTypeName name="java.awt.desktop.AboutHandler"/>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMSubTreeData"/>
     <fullyQualifiedTypeName name="javax.naming.ldap.StartTlsRequest"/>
     <fullyQualifiedTypeName name="java.util.function.Function"/>
-    <fullyQualifiedTypeName name="java.lang.Process"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="java.awt.FocusTraversalPolicy"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -33,14 +26,10 @@
     <fullyQualifiedTypeName name="dateTime.Calendar1"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="org.w3c.dom.ls.LSOutput"/>
     <fullyQualifiedTypeName name="methods.MethodTest"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="methods.ArrayParam"/>
     <fullyQualifiedTypeName name="java.lang.reflect.InaccessibleObjectException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="classpart.Point"/>
     <fullyQualifiedTypeName name="methods.CalcScore"/>
     <fullyQualifiedTypeName name="classpart.Circle"/>
@@ -50,10 +39,25 @@
     <fullyQualifiedTypeName name="subway.Person"/>
     <fullyQualifiedTypeName name="subway.Bus"/>
     <fullyQualifiedTypeName name="subway.Subway"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="javax.crypto.spec.ChaCha20ParameterSpec"/>
     <fullyQualifiedTypeName name="hiding.AccountTest"/>
     <fullyQualifiedTypeName name="classpart.AccounTest"/>
     <fullyQualifiedTypeName name="hiding.Account"/>
     <fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
+    <fullyQualifiedTypeName name="javax.security.auth.x500.X500Principal"/>
+    <fullyQualifiedTypeName name="statics.Student"/>
+    <fullyQualifiedTypeName name="statics.Card"/>
+    <fullyQualifiedTypeName name="thissample.Birthday"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.ls.LSOutput"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="javax.xml.crypto.dsig.XMLObject"/>
+    <fullyQualifiedTypeName name="objectarray.Dog"/>
+    <fullyQualifiedTypeName name="objectarray.Book"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="banking.bankarray.BankMain"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="banking.bankarray.Account"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction"/>
 </qualifiedTypeNameHistroy>

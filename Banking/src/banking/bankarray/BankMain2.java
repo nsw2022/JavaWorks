@@ -2,9 +2,7 @@ package banking.bankarray;
 
 import java.util.Scanner;
 
-
-
-public class BankMain {
+public class BankMain2 {
 
 
 	// 통장 계좌를 만들 객체 배열 100개 생성
@@ -58,25 +56,31 @@ public class BankMain {
 
 		System.out.print("계좌번호: ");
 		String ano = scanner.nextLine();
-
-
 		System.out.print("출금액: ");
 		int money = Integer.parseInt(scanner.nextLine());
+		while (true) {
 
-		if (findAccount(ano) != null) { // 계좌를 찾았다면 반환값이 있기에 null이 아님
-			// 예금 = 잔고 + 예금액
-			Account account = findAccount(ano);
-			if (money > account.getBalance()) {//출금액이 잔고를 초과했다면
-				System.out.println("잔액이 부족합니다. 다시입력해주세요");
+			if (findAccount(ano) != null) { // 계좌를 찾았다면 반환값이 있기에 null이 아님
+				// 예금 = 잔고 + 예금액
+				Account account = findAccount(ano);
+				if (account.getBalance() - money  < 0) {
+					System.out.println("잔액이 부족합니다. 남은금액"+account.getBalance());
+					System.out.print("출금액: ");
+					money = Integer.parseInt(scanner.nextLine());
+
+				}else {
+					account.setBalance(account.getBalance() - money );
+					System.out.println("결과: 정상처리 되었습니다.");
+					System.out.println("출금 후 잔액"+account.getBalance());
+					break;
+				}
 			}else {
-				account.setBalance(account.getBalance() - money );
-				System.out.println("결과: 정상처리 되었습니다.");
-				System.out.println("출금 후 잔액"+account.getBalance());
-
+				System.out.println("결과: 계좌가 없습니다.");
+				System.out.print("계좌번호: ");
+				ano = scanner.nextLine();
+				System.out.print("출금액: ");
+				money = Integer.parseInt(scanner.nextLine());
 			}
-
-		}else {
-			System.out.println("결과: 계좌가 없습니다.");
 		}
 
 	}
@@ -114,23 +118,28 @@ public class BankMain {
 		System.out.print("초기입금액: ");
 		int balance = Integer.parseInt(scanner.nextLine());
 
-		// 중복계좌입니다
-		if (findAccount(ano) != null) {//계좌에 계정이 이미있다면(계좌번호중복)
-			System.out.println("중복된 계좌입니다");
-		}else {
-			for (int i = 0; i < accountArray.length;i++) {// 전체배열반복
-				if ( accountArray[i] == null ) { // 조건식 null일때만 넣기
-					accountArray[i] = new Account(ano, onwer, balance);
-					System.out.println();
-					System.out.println("결과: 계좌가 생성되었습니다");
-					break;
-				}			
+		for (int i = 0; i < accountArray.length;i++) {// 전체배열반복
+			if ( accountArray[i] == null ) { // 조건식 null일때만 넣기
+				accountArray[i] = new Account(ano, onwer, balance);
+
+				System.out.println("결과: 계좌가 생성되었습니다");
+//				System.out.println(i);
+				break;
+			}else if (accountArray[i].getAno().equals(ano)) {
+				i--;
+//				System.out.println(i);
+				System.out.println("이미 있는 계좌입니다. 입력을 다시해주세요");
+				System.out.print("계좌번호: ");
+				ano = scanner.nextLine();
+
+				System.out.print("계좌주: ");
+				onwer = scanner.nextLine();
+
+				System.out.print("초기입금액: ");
+				balance = Integer.parseInt(scanner.nextLine());
 			}
-
-
-
-
 		}
+
 	}//createAccount
 
 

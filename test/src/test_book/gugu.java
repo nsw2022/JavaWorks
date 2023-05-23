@@ -1,9 +1,9 @@
-package var;
+package test_book;
 
-public class TEST1 {
+public class gugu {
 
 	public static void main(String[] args) {
-		// TEST1
+		
 
 	}
 
