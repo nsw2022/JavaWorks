@@ -1,0 +1,12 @@
+설정방법
+
+lib 폴더를 만들고
+그안에 sqldeveloper안에 폴더에 sqldeveloper\jdbc\lib 안의 ojdbc8.jar를 가져와서 복사후 붙혀넣기
+
+붙혀넣기한 ojdbc8.jar 의 Build Path의 classPath설정을 바꿈 아까 넣은 ojdbc8.jar를 선택하면
+
+초기세팅끝
+
+그다음부턴!
+
+JAVAWorks에 DBCounnection폴더 확인!

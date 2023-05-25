@@ -5,19 +5,20 @@ public class TestA {
 	int num;
 	
 	// 메서드
-	void aaa() {
+	static void aaa() {
 		System.out.println("aaa() 출력");
 	}
 	
-	public static int TEST;
+	public static int TEST; //정적
 	
 	public static void main(String[] args) {
 		// 가상 메서드 이해를 위한 코드 구현
 		// 인스턴스(객체) 위치 heep
 		// 메서드 - 정적영역에(데이터 영역) - static
-		TestA a1 = new TestA();
-		a1.num=10;
-		a1.aaa(); 
+		//TestA a1 = new TestA();
+		//a1.num=10;
+		//a1.aaa(); 
+		aaa();
 		
 		TestA a2 = new TestA();
 		a2.num=20;
