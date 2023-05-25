@@ -32,6 +32,9 @@ Ctrl + Shift + space
 Ctrl + Shift + F 전체 자동정렬
 Ctrl + i 드래그한만큼 자동정렬
 
+생성
+src 파일 클릭후 Ctrl + n 
+
 ----------생성자 자동완성--------------------------------
 생성자 역시 마우스우클릭->Source->Generate Constructor using Fields... (필드있는 생성자,필드선택가능)
 
