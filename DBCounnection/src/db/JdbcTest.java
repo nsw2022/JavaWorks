@@ -25,7 +25,7 @@ public class JdbcTest {
 	 * 
 	 * 1521 - 포트번호
 	 * 
-	 * XE - 리스너/리스너라는데 걍 오라클 버전인거같음...
+	 * XE - 오라클 버전
 	 */
 
 	public static void main(String[] args) {
