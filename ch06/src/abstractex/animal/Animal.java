@@ -15,4 +15,5 @@ public abstract class Animal {
 	public void showInfo() {
 		System.out.println("동물의 종류는 " + kind+"입니다.");
 	}
+	
 }

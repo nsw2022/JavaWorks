@@ -20,6 +20,7 @@ public class AnimalMain {
 		// animalSound호출
 		animalSound(cat);
 		animalSound(dog);
+		
 	
 		// 맨날 상속해서 써야하니깐 메소드 하나만 쓸꺼면 걍 바로도 가능하긴함
 		// 이름없는 클래스다해서 익명클래스
