@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import oracle.net.aso.m;
+
 // DAO(Data Access Objects) - 데이터베이스 연결 및 연동(입력, 검색, 수정, 삭제)
 // DTO 공부하기
 // VO 공부하기
@@ -51,7 +53,7 @@ public class PersonDAO {
 			while (rs.next()) { // 다음데이터가 있다면
 				Person person = new Person();// 기본생성자로 객체 생성
 				//person 테이블에서 userid를 가져와서 Person 객체의 userid에 저장
-				person.setUserId(rs.getString("USERID"));  // uppercase가 들어가있음 대소문자 구문안해도됨..
+				person.setUserId(rs.getString("USERID"));  // 이그노어케이스 들어가있음 대소문자 구문안해도됨..
 				person.setUserPw(rs.getString("userpw"));
 				person.setName(rs.getString("name"));
 				person.setAge(rs.getInt("age"));
@@ -96,5 +98,47 @@ public class PersonDAO {
 		
 		return person;
 	}
+	
+	// 자료 삭제
+	public void delectPerson(String userid) {
+		conn = JDBCUtill.getConnection();
+		String sql = "delete from person where userid = ? ";
+		try {			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userid);
+			pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			JDBCUtill.close(conn, pstmt);
+		}
+		
+	}
+	
+	//자료 수정
+	public void updatePerson(Person person) {
+		conn = JDBCUtill.getConnection();
+		String sql = "update person set userpw = ?, name = ?, age=?  where userid = ? ";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, person.getUserPw());
+			pstmt.setString(2, person.getName());
+			pstmt.setInt(3, person.getAge());
+			pstmt.setString(4, person.getUserId());
+			pstmt.executeUpdate();//db에서 수정됨
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			JDBCUtill.close(conn, pstmt);
+		}
+	}
+	
+	
+	
+	
+	
 	
 }
