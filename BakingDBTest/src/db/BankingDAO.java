@@ -27,7 +27,7 @@ public class BankingDAO {
 		}finally {
 			JDBCUtillTest.close(conn, pstmt);
 		}
-	}
+	}// 자료 삽입
 	
 	// 1개 검색
 	public Banking getBanking(int ano) {
@@ -52,7 +52,7 @@ public class BankingDAO {
 		}
 		
 		return banking;
-	}
+	}// 1개 검색
 	
 	// 전체검색
 	public ArrayList<Banking> getBankingList(){
@@ -79,5 +79,38 @@ public class BankingDAO {
 		
 		
 		return bankList;
+	}// 전체검색
+	
+	public void deleteBank(int ano) {//삭제
+		conn = JDBCUtillTest.getConnection();
+		String sql = "delete from test_bank where ano = ?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, ano);
+			pstmt.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			JDBCUtillTest.close(conn, pstmt);
+		}
+		
+			
+	}// 삭제
+	
+	public void updateBank(Banking banking) {
+		conn = JDBCUtillTest.getConnection();
+		String sql = "update test_bank set ano = ?, owner = ?, balance=? where ano=?";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, banking.getAno());
+			pstmt.setString(2, banking.getOwner());
+			pstmt.setInt(3, banking.getBalance());
+			pstmt.setInt(4, banking.getAno());
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
