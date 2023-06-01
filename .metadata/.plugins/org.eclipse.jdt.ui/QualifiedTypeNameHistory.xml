@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="transport.Bus"/>
-    <fullyQualifiedTypeName name="transport.Vehicle"/>
-    <fullyQualifiedTypeName name="transport.KakaoTaxi"/>
-    <fullyQualifiedTypeName name="fruits.Fruits"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="fruits.Grape"/>
-    <fullyQualifiedTypeName name="protectedex.pack1.B"/>
-    <fullyQualifiedTypeName name="fruits.Banana"/>
-    <fullyQualifiedTypeName name="fruits.Peach"/>
-    <fullyQualifiedTypeName name="fruits.Fruit"/>
-    <fullyQualifiedTypeName name="javax.crypto.spec.ChaCha20ParameterSpec"/>
-    <fullyQualifiedTypeName name="virtualfunciton.TestA"/>
-    <fullyQualifiedTypeName name="downcasting.AnimalTest.Animal"/>
     <fullyQualifiedTypeName name="downcasting.AnimalTest.Human"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="downcasting.Human"/>
@@ -29,7 +16,6 @@
     <fullyQualifiedTypeName name="java.lang.Process"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-    <fullyQualifiedTypeName name="oracle.net.aso.c"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -54,10 +40,24 @@
     <fullyQualifiedTypeName name="interfaceex.calculator.MyCalculator"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.TeleVison"/>
     <fullyQualifiedTypeName name="interfaceex.remocon.Audio"/>
-    <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.RoundRobin"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.LeastJob"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.Scheduler"/>
     <fullyQualifiedTypeName name="interfaceex.scheduler.PriorityAllocation"/>
+    <fullyQualifiedTypeName name="db.JDBCUtillTest"/>
+    <fullyQualifiedTypeName name="oracle.net.aso.c"/>
+    <fullyQualifiedTypeName name="db.Banking"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.SmartTv"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.SmartTV"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.Searchable"/>
+    <fullyQualifiedTypeName name="interfaceex.remocon.RemoteControl"/>
+    <fullyQualifiedTypeName name="tire.Car"/>
+    <fullyQualifiedTypeName name="tire.Tire"/>
+    <fullyQualifiedTypeName name="java.awt.image.AbstractMultiResolutionImage"/>
+    <fullyQualifiedTypeName name="tire.Car2"/>
+    <fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="tire.KumTire"/>
+    <fullyQualifiedTypeName name="tire.HanTire"/>
 </qualifiedTypeNameHistroy>

@@ -12,7 +12,7 @@ public class BankingMain {
 //				banking.getAno(),banking.getOwner(),banking.getBalance());
 		
 		Banking banking2 = new Banking(5678,"테스터승우",10_000);
-		//dao.insertBanking(banking2);
+		dao.insertBanking(banking2);// 데이터 삽입구현
 		
 		//dao.deleteBank(1234);//삭제구현
 		
