@@ -10,7 +10,6 @@ import java.util.Scanner;
 import banking.bankarray.Account;
 import banking.bankingdb.common.JDBCUtill;
 
-
 public class AcoountDAO {
 	// 전역변수
 	static private Connection conn = null;
@@ -115,7 +114,6 @@ public class AcoountDAO {
 		while (true) {
 			System.out.print("계좌번호:  ");
 			String ano = scanner.nextLine();
-			
 
 			if (findAccount(ano) != null) { // 찾는 계좌가 있다면
 				System.out.print("입금액:  "); // 입금함
@@ -125,7 +123,7 @@ public class AcoountDAO {
 				String owner = account.getOwner();
 				int balance = account.getBalance();
 				// 예금 = 잔고 + 예금액
-				
+
 				conn = JDBCUtill.getConnection();
 				String sql = "update account set owner = ?, balance = ? where ano = ?";
 				try {
@@ -134,16 +132,16 @@ public class AcoountDAO {
 					pstmt.setInt(2, balance);
 					pstmt.setString(3, ano);
 					pstmt.executeUpdate();
-					
-					System.out.println("입금후 금액: "+account.getBalance());
+
+					System.out.println("입금후 금액: " + account.getBalance());
 					System.out.println("결과: 정상 처리 되었습니다.");
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}finally {
+				} finally {
 					JDBCUtill.close(conn, pstmt);
 				}
-	
+
 				break; // 입금 처리후 빠져나옴
 			} else {
 				System.out.println("결과: 계좌가 없습니다. 다시 입력해 주세요");
@@ -154,23 +152,51 @@ public class AcoountDAO {
 
 	// 계좌에서 출금하는 메서드
 	public void withdraw() {
-		/*
-		 * System.out.println("-------------------------------------------");
-		 * System.out.println("출금");
-		 * System.out.println("-------------------------------------------");
-		 * 
-		 * while (true) { System.out.print("계좌번호:  "); String ano = scanner.nextLine();
-		 * 
-		 * if (findAccount(ano) != null) { // 계좌를 찾았다면(반환값이 있다면) while (true) {
-		 * System.out.print("출금액:  "); int money = Integer.parseInt(scanner.nextLine());
-		 * 
-		 * Account account = findAccount(ano); if (money > account.getBalance()) { //
-		 * 출금액이 잔고를 초과한다면 System.out.println("잔액이 부족합니다. 다시 입력해 주세요"); } else { // 출금 =
-		 * 잔고 - 예금액 account.setBalance(account.getBalance() - money);
-		 * System.out.println("결과: 정상 처리 되었습니다."); break; // 출금 처리후 빠져나옴 } } // 내부 while
-		 * 끝 break; // 정상 처리후 빠져나옴 } else {
-		 * System.out.println("결과: 계좌가 없습니다. 다시 입력해 주세요"); } } // 외부 while 끝
-		 */
+		System.out.println("-------------------------------------------");
+		System.out.println("출금");
+		getAccountList();
+		System.out.println("-------------------------------------------");
+
+		while (true) {
+			System.out.print("계좌번호:  ");
+			String ano = scanner.nextLine();
+
+			if (findAccount(ano) != null) { // 계좌를 찾았다면(반환값이 있다면)
+				while (true) {
+					System.out.print("출금액:  ");
+					int money = Integer.parseInt(scanner.nextLine());
+					Account account = findAccount(ano);
+					String owner = account.getAno();
+					int balance = account.getBalance() - money;
+
+					if (money > account.getBalance()) { // 출금액이 잔고를 초과한다면
+						System.out.println("잔액이 부족합니다. 다시 입력해 주세요");
+					} else {
+						conn = JDBCUtill.getConnection();
+						String sql = "update account set balance = ? where ano = ?";
+						try {
+							pstmt = conn.prepareStatement(sql);
+
+							pstmt.setInt(1, balance);
+							pstmt.setString(2, ano);
+							pstmt.executeUpdate();// db에 저장
+							// 출금 = 잔고 - 예금액
+
+							System.out.println("결과: 정상 처리 되었습니다.");
+							System.out.println("남은금액: "+balance);
+							break; // 출금 처리후 빠져나옴
+						} catch (SQLException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+
+					}
+				} // 내부 while 끝
+				break; // 정상 처리후 빠져나옴
+			} else {
+				System.out.println("결과: 계좌가 없습니다. 다시 입력해 주세요");
+			}
+		} // 외부 while 끝
 	}
 
 	// 계좌를 검색하는 메서드
@@ -209,6 +235,39 @@ public class AcoountDAO {
 		 * 
 		 */
 		return account;
+	}
+
+	public void deletebank() {
+		System.out.println("-------------------------------------------");
+		System.out.println("계좌 삭제");
+		getAccountList();
+		System.out.println("-------------------------------------------");
+
+		System.out.print("계좌번호 입력: ");
+		String ano = scanner.nextLine();
+
+		if (findAccount(ano) != null) {
+			while (true) {
+				conn = JDBCUtill.getConnection();
+				String sql = "delete from account where ano = ?";
+				try {
+					pstmt = conn.prepareStatement(sql);
+					pstmt.setString(1, ano);
+					pstmt.executeUpdate();
+					System.out.println("결과 계좌삭제");
+					getAccountList();
+					break;
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				break;
+			}
+
+		} else {
+			System.out.println("계좌가 없습니다. 다시입력해주세요.");
+		}
+
 	}
 
 }// DAO 클래스 끝
