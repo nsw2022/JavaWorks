@@ -9,14 +9,20 @@ public class Book {
 	public Book(int bookNumber, String bookTitle) {
 		
 		this.bookNumber = bookNumber; 
-		BookTitle = bookTitle;
+		this.BookTitle = bookTitle;
 	}
 	
-	@Override
-	public String toString() {
-		
-		return bookNumber+", " + BookTitle;
+	/*
+	public void showInfo() {
+		System.out.println(bookNumber+", "+BookTitle);
 	}
+	*/
+	
+//	@Override
+//	public String toString() {
+//		
+//		return bookNumber+", " + BookTitle;
+//	}
 	
 	
 	

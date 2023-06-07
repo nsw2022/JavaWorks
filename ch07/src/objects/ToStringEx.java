@@ -14,6 +14,8 @@ public class ToStringEx {
 		System.out.println(book);
 		System.out.println(book.toString());
 		
+		//	book.showInfo();
+		
 		
 		
 	}
