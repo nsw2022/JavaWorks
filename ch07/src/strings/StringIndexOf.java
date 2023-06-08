@@ -13,6 +13,16 @@ public class StringIndexOf {
 			System.out.println("자바와 관련 없는 책이군요! ");
 		}
 		
+		//lastIndexOf() - 찾는 문자를 뒤에서 부터 검색함
+		String uri = "/board/boardList.jsp";
+		int uri_idx1 = uri.indexOf('/');
+		System.out.println(uri_idx1);//0
+		
+		int uri_idx2 = uri.lastIndexOf('/');//6 뒤에서 부터 찾음
+		System.out.println(uri_idx2);
+		
+		
+		
 		
 	}
 }

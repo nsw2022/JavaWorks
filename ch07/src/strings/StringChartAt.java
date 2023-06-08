@@ -16,7 +16,7 @@ public class StringChartAt {
 		case '2': case '4': case '6':
 			System.out.println("여자입니다."); break;
 		default:
-			System.out.println("지구인이 아니군 킷사마"); break;
+			System.out.println("다른값 입력"); break;
 		}
 		
 	}
