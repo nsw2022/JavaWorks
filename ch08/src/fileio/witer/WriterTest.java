@@ -7,7 +7,7 @@ import java.io.Writer;
 public class WriterTest {
 	public static void main(String[] args) throws IOException {
 		
-		Writer fw = new FileWriter("data.txt");
+		Writer fw = new FileWriter("c:/file/newfile.txt");
 		
 		fw.write("hello~\n");
 		fw.write("한글을 받아라\n");

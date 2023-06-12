@@ -18,6 +18,7 @@ public class ReadSample {
 		
 		int data;
 		while ((data = is.read()) != -1) System.out.println(data);
+		is.close();
 		
 	}
 }
