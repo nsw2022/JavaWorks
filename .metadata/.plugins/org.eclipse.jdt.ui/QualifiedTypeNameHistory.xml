@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="shelf.Shelf"/>
-    <fullyQualifiedTypeName name="shelf.Queue"/>
-    <fullyQualifiedTypeName name="java.lang.Process"/>
-    <fullyQualifiedTypeName name="shelf.BookSelf"/>
     <fullyQualifiedTypeName name="javax.sound.midi.Soundbank"/>
     <fullyQualifiedTypeName name="gamelevel.Beginner"/>
     <fullyQualifiedTypeName name="javax.swing.text.html.HTMLWriter"/>
@@ -23,7 +19,6 @@
     <fullyQualifiedTypeName name="banking.bankingdb.common.JDBCUtill"/>
     <fullyQualifiedTypeName name="objects.Book"/>
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
-    <fullyQualifiedTypeName name="java.io.DataOutput"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="clone.Point"/>
     <fullyQualifiedTypeName name="clone.Circle"/>
@@ -47,17 +42,22 @@
     <fullyQualifiedTypeName name="test_work.A"/>
     <fullyQualifiedTypeName name="test_thread.TheadA"/>
     <fullyQualifiedTypeName name="test_thread.ThreadB"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="test_thread.PersonThread"/>
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="test_thread.Account"/>
     <fullyQualifiedTypeName name="test_thread.TestThread"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.Writer"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.DataOutput"/>
+    <fullyQualifiedTypeName name="java.io.Reader"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.io.Writer"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
 </qualifiedTypeNameHistroy>
