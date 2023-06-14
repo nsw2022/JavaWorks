@@ -13,7 +13,7 @@ public class ReaderTest3 {
 			}
 			
 		} catch (Exception e) {
-			
+			e.printStackTrace();
 		}
 		
 		

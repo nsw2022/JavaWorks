@@ -8,8 +8,8 @@ import java.io.IOException;
 public class FileCopy2 {
 	public static void main(String[] args) {
 		// 이미지 파일을 읽고쓰기(복사)
-		String originFile = "c:/file/ojdbc8.jar";
-		String copyFile = "c:/file/ojdbc8-1.jar";
+		String originFile = "c:/file/bg0.jpg";
+		String copyFile = "c:/file/bg2.jpg";
 		long start =0,end = 0;
 
 		try (FileOutputStream fos = new FileOutputStream(copyFile);
