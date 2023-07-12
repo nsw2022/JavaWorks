@@ -1,0 +1,3 @@
+List   >  ArrayList(싱글스레드), Vector (멀티스레드,중복가능 순서있음)
+Set   >  HashSet (중복이 불허, 순서없음)
+map > 

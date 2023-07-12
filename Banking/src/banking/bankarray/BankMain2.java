@@ -27,8 +27,10 @@ public class BankMain2 {
 				}else if (selectNo==2) {  // 계좌목록
 					getAccountList();
 				}else if(selectNo==3){ // 예금(입금)
+					getAccountList();
 					deposit();
 				}else if (selectNo==4) { // 출금
+					getAccountList();
 					withdraw();
 				}
 				else if(selectNo==5){ 

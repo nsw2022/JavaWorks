@@ -2,7 +2,7 @@ package banking.bankingdb;
 
 import java.util.Scanner;
 
-public class BankMain {
+public class MainBanking {
 
 	public static void main(String[] args) {
 
@@ -26,8 +26,10 @@ public class BankMain {
 					dao.getAccountList();
 					// getAccountList(); // 계좌 목록
 				} else if (selectNo == 3) {
+					dao.getAccountList();
 					dao.deposit(); // 예금
 				} else if (selectNo == 4) {
+					dao.getAccountList();
 					dao.withdraw(); // 출금
 				} else if (selectNo == 5) {
 					dao.deletebank();
