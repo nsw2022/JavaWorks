@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="test_thread.TestThread"/>
-    <fullyQualifiedTypeName name="java.io.OutputStream"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
-    <fullyQualifiedTypeName name="java.io.DataOutput"/>
     <fullyQualifiedTypeName name="java.io.Reader"/>
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.io.Writer"/>
@@ -30,7 +26,6 @@
     <fullyQualifiedTypeName name="colletions.box2.Box"/>
     <fullyQualifiedTypeName name="colletions.box2.Apple"/>
     <fullyQualifiedTypeName name="java.lang.LinkageError"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -40,14 +35,9 @@
     <fullyQualifiedTypeName name="colletions.product.Product"/>
     <fullyQualifiedTypeName name="colletions.product.Car"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="colletions.map.CarFactory"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="colletions.map.Car"/>
     <fullyQualifiedTypeName name="nestedclass.A.B"/>
     <fullyQualifiedTypeName name="nestedclass.A"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="nestedclass.innerclass.MessageListener"/>
     <fullyQualifiedTypeName name="nestedclass.innerclass.Button"/>
     <fullyQualifiedTypeName name="nestedclass.innerclass.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="colletions.list.ArrayListTest"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="colletions.list.MemberArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="colletions.map.MemberHashMap"/>
+    <fullyQualifiedTypeName name="colletions.member.Member"/>
 </qualifiedTypeNameHistroy>
